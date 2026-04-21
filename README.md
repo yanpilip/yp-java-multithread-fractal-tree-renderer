@@ -3,7 +3,7 @@ A Java-based graphical application that renders a fractal tree using a recursive
 
 <img width="800" height="450" alt="fractal_tree" src="https://github.com/user-attachments/assets/c77b2a71-b747-42a1-8c43-80cc35cd40d1" />
 
-🚀 Key Features
+### 🚀 Key Features
 - Recursive Fractal Algorithm: Generates a tree structure using trigonometric calculations for branch positioning.
 
 - Multithreaded Execution: Utilizes ExecutorService with a fixed thread pool (128 threads) to compute branch positions concurrently.
@@ -14,13 +14,13 @@ A Java-based graphical application that renders a fractal tree using a recursive
 
 - Dynamic Visuals: Includes a "Slow Mode" to visualize the tree's growth in real-time, with color differentiation for "leaves" (green) vs. "branches" (black).
 
-🛠️ Technical Deep Dive
-# Concurrency Strategy
+# 🛠️ Technical Deep Dive
+### Concurrency Strategy
 The project efficiently separates computation from rendering. While worker threads calculate the coordinates ($x, y$) of the branches, the main Canvas thread consumes that data to draw to the screen.
-#Synchronization
+### Synchronization
 I implemented a custom task-tracking mechanism using a remTasks counter. This ensures the application knows exactly when the recursive generation is complete, allowing for a clean shutdown of the ExecutorService.
 
-📦 How to Run
+# 📦 How to Run
 1) Clone the repo
 2) Compile
 3) Run (java FractalTree true)
