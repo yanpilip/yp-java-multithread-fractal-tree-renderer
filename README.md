@@ -1,6 +1,8 @@
 # yp-java-multithread-fractal-tree-renderer
 A Java-based graphical application that renders a fractal tree using a recursive branching algorithm distributed across a thread pool. This project demonstrates synchronization patterns, thread-safe data structures, and Swing-based visualization.
 
+<img width="800" height="450" alt="fractal_tree" src="https://github.com/user-attachments/assets/c77b2a71-b747-42a1-8c43-80cc35cd40d1" />
+
 🚀 Key Features
 - Recursive Fractal Algorithm: Generates a tree structure using trigonometric calculations for branch positioning.
 
